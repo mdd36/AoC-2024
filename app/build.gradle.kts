@@ -29,6 +29,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+		implementation(kotlin("reflect"))
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
