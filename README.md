@@ -5,4 +5,4 @@ included stdlib approach should hopefully mean I spend less writing heaps and qu
 
 ## Write Ups
 
-I'm writing up my thoughts on each day on my [blog](https://mattdickson.io/blog).
+I'm writing up my thoughts on each day on my [blog](https://mattdickson.io/posts/2024/12/01/advent-of-code).

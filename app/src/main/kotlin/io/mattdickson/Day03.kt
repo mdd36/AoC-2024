@@ -13,7 +13,7 @@ class Day03 : Solver {
 	override fun part2(): String { 
 		val enabledRanges = "do\\(\\)|don't\\(\\)".toRegex().findAll(input)
 			.map { Pair(it.value, it.range.start) }
-			.fold(mutableListOf(Pair("do", 0))) { acc, r ->
+			.fold(mutableListOf(Pair("do()", 0))) { acc, r ->
 				if (acc.last().first != r.first) { acc.apply{ add(r) } } else { acc }
 			}
 			.chunked(2) { Pair(it[0].second, it.getOrNull(1)?.let { it.second} ?: input.length) }
@@ -28,7 +28,6 @@ class Day03 : Solver {
 }
 
 class IntervalTreeNode {
-	
 	val start: Int
 	val end: Int
 
